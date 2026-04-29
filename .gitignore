@@ -1,0 +1,10 @@
+*.exe
+*.lnk
+*.log
+*.dat
+*.hcc
+*.hc
+.env
+Bases/
+logs/
+MQL5/logs/
