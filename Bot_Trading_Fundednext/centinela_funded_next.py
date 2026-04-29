@@ -7,9 +7,11 @@ from datetime import datetime
 import joblib
 import warnings
 import requests
-
+import os
+from dotenv import load_dotenv
 warnings.filterwarnings('ignore')
 
+load_dotenv()
 # ==========================================
 # 1. IDENTIDAD DE LA CUENTA (FUNDEDNEXT #1)
 # ==========================================
@@ -20,13 +22,13 @@ NUMERO_PRUEBA = 1
 BROKER_PATH = r"C:\Users\vr4ux23\Documents\Bot_Trading_Fundednext\terminal64.exe"
 MODELO_PATH = r"C:\Users\vr4ux23\Documents\Bot_Trading_Fundednext\modelo_rf_eurusd.pkl"
 
-BROKER_SERVIDOR = "FundedNext-Server 3"
-LOGIN_CUENTA = 33776395
-PASSWORD_CUENTA = "ijxCT65##"
+BROKER_SERVIDOR = "FN_SERVER", "FundedNext-Server 3"
+LOGIN_CUENTA = "FN_LOGIN"
+PASSWORD_CUENTA = "FN_PASSWORD"
 SYMBOL = "EURUSD"
 
-TELEGRAM_TOKEN = "8780925932:AAG31tGRBoFhVjrzg38FHyDkJzouz3fq9sA"
-TELEGRAM_CHAT_ID = "5192466783"
+TELEGRAM_TOKEN = "TELEGRAM_TOKEN"
+TELEGRAM_CHAT_ID = "TELEGRAM_CHAT_ID"
 
 TIMEFRAME = mt5.TIMEFRAME_H1
 # --- CORRECCION: PORCENTAJE EN LUGAR DE USD FIJOS ---
