@@ -4,6 +4,8 @@
 *.dat
 *.hcc
 *.hc
+*.lic
+.dat
 .env
 Bases/
 logs/
